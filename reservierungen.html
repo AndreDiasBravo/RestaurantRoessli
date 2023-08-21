@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant Rössli">
+    <meta name="author" content="Pinto Robenhausen">
+    <title>Reservierungen Restaurant Rössli - Pinto Robenhausen</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
+
+    <!-- Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== Navigation Bar ===== -->
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="images/logo.webp">
+            </a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li>
+                        <a>Menus <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="anlasse.html">Anlässe</a></li>
+                            <li><a href="spezielle-menus.html">Spezielle Menus</a></li>
+                            <li><a href="speisekarte.html">Speisekarte</a></li>
+                            <li><a href="weinkarte.html">Weinkarte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reservierungen.html" class="active">Reservierungen</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="bar"></i>
+        </nav>
+    </header>
+
+    <!-- ===== Mobile Menu ===== -->
+    <div class="popup-mobilemenu">
+        <div class="menu-inner">
+            <div class="menu-top">
+                <i class="fa-solid fa-close" id="close"></i>
+            </div>
+
+            <div class="content">
+                <nav id="sideNavMobile" class="mainmenu-nav">
+                    <ul class="navbar-list1">
+                        <li><a class="menu__item" href="/">Home</a></li>
+                        <li><a class="menu__item" href="restaurant.html">Restaurant</a></li>
+                        <li>
+                            <a>Menus <i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="anlasse.html">Anlässe</a></li>
+                                <li><a href="spezielle-menus.html">Spezielle Menus</a></li>
+                                <li><a href="speisekarte.html">Speisekarte</a></li>
+                                <li><a href="weinkarte.html">Weinkarte</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menu__item active" href="reservierungen.html">Reservierungen</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================================
+            HERO SECTION
+    ========================================================================================== -->
+    <section class="section page-header">
+        <div class="container">
+            <h1>Reservierungen</h1>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================================================
+           CONTACT SECTION
+    ========================================================================================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+
+            <div class="contact-info">
+                <div class="float-right">
+                    <h2>Öffnungszeiten</h2>
+
+                    <div class="info-details">
+                        <div class="info-text">
+                            <p><strong>Dienstag - Samstag:</strong></p>
+                            <a>11:30 - 14:00 Uhr <br> 17:30 - 23:30 Uhr</a>
+                            <br> <br>
+                            <p><strong>Sonntag - Montag:</strong></p> <a>Geschlossen</a>
+                        </div>
+                    </div>
+
+                    <h2>Kontakt</h2>
+
+                    <div class="info-details">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="info-text">
+                            <p><strong>Telefon: </strong></p>
+                            <a href="tel:0434880636">+043 488 06 36</a>
+                        </div>
+                    </div>
+
+                    <div class="info-details">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <div class="info-text">
+                            <p><strong>Adresse: </strong></p>
+                            <a href="https://goo.gl/maps/G25WGW57kumDyhHg8" target="_blank">Dorfstrasse 23, 8620
+                                Wetzikon</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="float-left">
+                    <div class="form-wrapper">
+                        <form id="contact_form" action="" method="post" class="contact_form">
+                            <h2>Für Reservierungen</h2>
+                            <p>Füllen Sie bitte das Formular aus und wir melden uns umgehend bei Ihnen:</p>
+
+                            <div class="returnmessage"
+                                data-success="Your message has been received, We will contact you soon.">
+                            </div>
+                            <div class="empty_notice"><span>Please Fill All the Fields</span></div>
+
+                            <input type="text" name="name" id="name" placeholder="Name *">
+                            <input type="email" name="email" id="email" placeholder="Email Adresse *">
+                            <input type="tel" name="phone" id="phone" placeholder="Telefon *">
+                            <input type="text" name="address" id="address" placeholder="Adresse *">
+                            <textarea name="message" id="message" placeholder="Nachricht" cols="30"
+                                rows="10"></textarea>
+
+                            <button name="submit" type="submit" id="send_message" class="contact-btn">Senden</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAP -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10816.437809531619!2d8.768902555419931!3d47.3317337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479abb976a26006d%3A0x64d04697b86644fa!2zUsO2c3NsaQ!5e0!3m2!1sen!2s!4v1687175792627!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+
+    <!-- ==========================================================================================
+           FOOTER
+    ========================================================================================== -->
+
+    <footer>
+        <div class="container">
+            <div class="links">
+                <a href="/" class="logo">
+                    <img src="images/logo.webp" alt="Logo">
+                </a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="menus.html">Menus</a></li>
+                    <li><a href="reservierungen.html">Reservierungen</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-details">
+                <ul>
+                    <li><a href="https://www.facebook.com/pintowetzikon/" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="mailto:roessli.pinto@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="tel:0434880636"><i class="fas fa-phone"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="branding">
+            <p>Copyright &copy; 2017 Restaurant Rössli | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant Rössli">
+    <meta name="author" content="Pinto Robenhausen">
+    <title>Restaurant Rössli - Pinto Robenhausen</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== Navigation Bar ===== -->
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="images/logo.webp">
+            </a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="restaurant.html" class="active">Restaurant</a></li>
+                    <li>
+                        <a>Menus <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="anlasse.html">Anlässe</a></li>
+                            <li><a href="spezielle-menus.html">Spezielle Menus</a></li>
+                            <li><a href="speisekarte.html">Speisekarte</a></li>
+                            <li><a href="weinkarte.html">Weinkarte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reservierungen.html">Reservierungen</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="bar"></i>
+        </nav>
+    </header>
+
+    <!-- ===== Mobile Menu ===== -->
+    <div class="popup-mobilemenu">
+        <div class="menu-inner">
+            <div class="menu-top">
+                <i class="fa-solid fa-close" id="close"></i>
+            </div>
+
+            <div class="content">
+                <nav id="sideNavMobile" class="mainmenu-nav">
+                    <ul class="navbar-list1">
+                        <li><a class="menu__item" href="/">Home</a></li>
+                        <li><a class="menu__item active" href="restaurant.html">Restaurant</a></li>
+                        <li>
+                            <a>Menus <i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="anlasse.html">Anlässe</a></li>
+                                <li><a href="spezielle-menus.html">Spezielle Menus</a></li>
+                                <li><a href="speisekarte.html">Speisekarte</a></li>
+                                <li><a href="weinkarte.html">Weinkarte</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menu__item" href="reservierungen.html">Reservierungen</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================================
+            HERO SECTION
+    ========================================================================================== -->
+    <section class="section page-header restaurant_header">
+        <div class="container">
+            <h1>Restaurant Rössli</h1>
+        </div>
+    </section>
+
+    <!-- ==========================================================================================
+            ABOUT SECTION
+    ========================================================================================== -->
+    <section class="about" id="about-us">
+        <div class="container">
+
+            <div class="flex">
+                <div class="flex-img">
+                    <img src="images/about-img.webp" alt="About Us">
+                </div>
+
+                <div class="flex-content">
+                    <span class="yellow">RESTAURANT RÖSSLI</span>
+                    <h2>PINTO
+                        ROBENHAUSEN</h2>
+
+                    <p><strong>Als im Jahr 1777 im Rössli zum ersten Mal eine Mahlzeit verkauft wurde, regierte noch die
+                            Herrschaft Greifensee über Robenhausen.</strong></p>
+                    <hr> <br>
+
+                    <p>«Ich bin stolz auf die Tradition dieses Gasthauses», sagt <span class="author">Paulo
+                            Pinto</span>. Er übernahm das Rössli Robenhausen im Jahr 2014 mit seiner Frau Rosa und
+                        bietet seither Schweizer Küche und Meeresfrüchte aus dem Süden an.</p>
+
+                    <p>«Manchmal höre ich von Leuten, dass sie gedacht hätten, unser Restaurant sei nur für Portugiesen
+                        da. Aber das stimmt überhaupt nicht! Das Rössli ist seit 239 Jahren ein Robenhauser
+                        Quartierrestaurant und das soll es für immer bleiben», so <span class="author">der
+                            leidenschaftliche Wirt</span>.</p>
+
+                    <p>Seine Augen glänzen, wenn er von den schönsten Erlebnissen der letzten zwei Jahre berichtet. «Ich
+                        liebe es, wenn betagte Menschen von ihren früheren Abenteuern im Rössli erzählen. Ein Mann sagte
+                        mir, er habe hier vor vielen Jahrzehnten seine Hochzeit gefeiert. Oder eine Frau erzählte, sie
+                        hätte vor 50 Jahren im Rössli an einer Klassenzusammenkunft teilgenommen und hätte viele schöne
+                        Erinnerung an dieses Fest.»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================================
+            GALLERY SLIDESHOW
+    ========================================================================================== -->
+    <div class="choose-avatar">
+        <span class="left"></span>
+        <div class="avatars-container">
+            <div class="avatars">
+                <div class="avatar-item">
+                    <img src="images/gallery/g1.webp">
+                </div>
+                <div class="avatar-item">
+                    <img src="images/gallery/g2.webp">
+                </div>
+                <div class="avatar-item">
+                    <img src="images/gallery/g3.webp">
+                </div>
+                <div class="avatar-item">
+                    <img src="images/gallery/g4.webp">
+                </div>
+                <div class="avatar-item">
+                    <img src="images/gallery/g5.webp">
+                </div>
+                <div class="avatar-item">
+                    <img src="images/gallery/g6.webp">
+                </div>
+            </div>
+
+            <div id="about_gallery" class="g_modal">
+                <span class="g_close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="gallery_img">
+            </div>
+        </div>
+        <span class="right"></span>
+
+    </div>
+
+    <!-- ==========================================================================================
+           FOOTER
+    ========================================================================================== -->
+
+    <footer>
+        <div class="container">
+            <div class="links">
+                <a href="/" class="logo">
+                    <img src="images/logo.webp" alt="Logo">
+                </a>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="menus.html">Menus</a></li>
+                    <li><a href="reservierungen.html">Reservierungen</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-details">
+                <ul>
+                    <li><a href="https://www.facebook.com/pintowetzikon/" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="mailto:roessli.pinto@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="tel:0434880636"><i class="fas fa-phone"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="branding">
+            <p>Copyright &copy; 2017 Restaurant Rössli | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
